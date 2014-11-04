@@ -46,7 +46,7 @@ Se é sua primeira vez, vamos ser rápidos para você experimentar a Smartcoin. 
 Para obter suas prórias chaves de acesso a API da Smartcoin, visite o website da [Smartcoin](https://smartcoin.com.br/) e crie um [cadastro](https://manage.smartcoin.com.br/#/signup). Ao se cadastrar no Smart Manage vá em **Menu -> Ajustes -> Chaves API**. Lá você encontrará dois pares de chaves, **API Key** e **Secret Key** (Secret Key é secreta e não deve ser publicada), para os ambientes test (sandbox) e live (produção). Enquanto estiver fazendo a integração, use o par de chaves do ambiente test. Quando a integração estiver completa, troque pelo par de chaves do ambiente live. Ah, muito importante. Antes de poder usar o par de chaves do ambiente live é preciso fazer a [Ativação da Conta](https://github.com/smartcoinpayments/Documentation/wiki/Ativa%C3%A7%C3%A3o-da-Conta).
 
 ### Saiba mais:
-1. [Smart Checkout](https://github.com/smartcoinpayments/Documentation/wiki/SmartCheckout) (personalize o seu Smart Checkout)
+1. [Smart Checkout](https://github.com/smartcoinpayments/Documentation/wiki/Smart-Checkout) (personalize o seu Smart Checkout)
 2. Bibliotecas (envie as cobranças via servidor para a Smartcoin):
     * [- PHP](https://github.com/smartcoinpayments/smartcoin-php)
     * [- Ruby](https://github.com/smartcoinpayments/smartcoin-ruby)
