@@ -1,4 +1,4 @@
-Bem vindo à [Smartcoin](https://smartcoin.com.br)
+Bem vindo à <a href="https://smartcoin.com.br/" target="_blank">Smartcoin</a>.
 
 Vamos começar!
 
