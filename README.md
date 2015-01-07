@@ -6,7 +6,9 @@ Vamos começar!
 Se é sua primeira vez, vamos ser rápidos para você experimentar a Smartcoin. Queremos te mostrar como mudar a forma de fazer pagamentos online no Brasil.
 
 
-**1)** Se no seu site ainda não tem [jQuery](http://jquery.com/), inclua-o (versão 1.7.0 ou posterior) no head de todas as suas páginas (veja código exemplo abaixo):
+**1)** Se no seu site ainda não tem <a href="http://jquery.com/" target="_blank">jQuery</a>, inclua-o (versão 1.7.0 ou posterior) no head de todas as suas páginas (veja código exemplo abaixo):
+
+
 ````html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 ````
@@ -36,21 +38,23 @@ Se é sua primeira vez, vamos ser rápidos para você experimentar a Smartcoin. 
     </script>
  </form>
 ````
-**Aviso 1:** O mais legal é que você pode fazer várias personalizações do Smart Checkout, [veja aqui como](https://github.com/smartcoinpayments/Documentation/wiki/Smart-Checkout).
+**Aviso 1:** O mais legal é que você pode fazer várias personalizações do Smart Checkout, <a href="https://github.com/smartcoinpayments/Documentation/wiki/Smart-Checkout" target="_blank">veja aqui como</a>.
 
-**Aviso 2:** A URL do atributo action do form é um exemplo e deve ser substituída pela sua. [Veja nosso exemplo](https://github.com/smartcoinpayments/smartcoin-heroku) de como criar um serviço no Heroku para processar as suas transações.
+**Aviso 2:** A URL do atributo action do form é um exemplo e deve ser substituída pela sua. <a href="https://github.com/smartcoinpayments/smartcoin-heroku" target="_blank">Veja nosso exemplo</a> de como criar um serviço no Heroku para processar as suas transações.
 
 **4)** Agora é só testar e experimentar a nova experiência que o seu e-commerce irá proporcionar para os seus clientes! :)
 
 ### Minhas próprias chaves de acesso a API da Smartcoin:
-Para obter suas prórias chaves de acesso à API da Smartcoin, visite o website da [Smartcoin](https://smartcoin.com.br/) e crie um [cadastro](https://manage.smartcoin.com.br/#/signup). Ao se cadastrar no Smart Manage vá em **Menu -> Ajustes -> Chaves API**. Lá você encontrará dois pares de chaves, **API Key** e **Secret Key** (Secret Key é secreta e não deve ser publicada), para os ambientes test (sandbox) e live (produção). Enquanto estiver fazendo a integração, use o par de chaves do ambiente test. Quando a integração estiver completa, troque pelo par de chaves do ambiente live. Ah, muito importante: antes de poder usar o par de chaves do ambiente live é preciso fazer a [Ativação da Conta](https://github.com/smartcoinpayments/Documentation/wiki/Ativa%C3%A7%C3%A3o-da-Conta).
+Para obter suas prórias chaves de acesso à API da Smartcoin, visite o website da <a href="https://smartcoin.com.br/" target="_blank">Smartcoin</a> e crie um <a href="https://manage.smartcoin.com.br/#/signup" target="_blank">cadastro</a>. Ao se cadastrar no Smart Manage vá em **Menu -> Ajustes -> Chaves API**. Lá você encontrará dois pares de chaves, **API Key** e **Secret Key** (Secret Key é secreta e não deve ser publicada), para os ambientes test (sandbox) e live (produção). Enquanto estiver fazendo a integração, use o par de chaves do ambiente test. Quando a integração estiver completa, troque pelo par de chaves do ambiente live. Ah, muito importante: antes de poder usar o par de chaves do ambiente live é preciso fazer a <a href="https://github.com/smartcoinpayments/Documentation/wiki/Ativa%C3%A7%C3%A3o-da-Conta" target="_blank">Ativação da Conta</a>.
 
 ### Saiba mais:
-1. [Smart Checkout](https://github.com/smartcoinpayments/Documentation/wiki/Smart-Checkout) (personalize o seu Smart Checkout)
+1. <a href="https://github.com/smartcoinpayments/Documentation/wiki/Smart-Checkout" target="_blank">Smart Checkout</a> (personalize o seu Smart Checkout)
 2. Bibliotecas (envie as cobranças via servidor para a Smartcoin):
-    * [- PHP](https://github.com/smartcoinpayments/smartcoin-php)
-    * [- Ruby](https://github.com/smartcoinpayments/smartcoin-ruby)
+    * <a href="https://github.com/smartcoinpayments/smartcoin-php" target="_blank">- PHP</a>
+    * <a href="https://github.com/smartcoinpayments/smartcoin-ruby" target="_blank">- Ruby</a>
 3. Plugins (faça integração com sua plataforma de e-commerce de forma rápida e fácil):
     * [- WooCommerce](https://github.com/smartcoinpayments/smartcoin-woo)
     * [- PrestaShop](https://github.com/smartcoinpayments/smartcoin-prestashop)
-4. [Solução com Heroku](https://github.com/smartcoinpayments/smartcoin-heroku)
+    * <a href="https://github.com/smartcoinpayments/smartcoin-woo" target="_blank"> - WooCommerce</a>
+    * <a href="https://github.com/smartcoinpayments/smartcoin-prestashop" target="_blank"> - PrestaShop</a>
+4. <a href="https://github.com/smartcoinpayments/smartcoin-heroku" target="_blank">Solução com Heroku</a>
