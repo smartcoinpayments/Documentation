@@ -6,7 +6,7 @@ Vamos começar!
 Se é sua primeira vez, vamos ser rápidos para você experimentar a Smartcoin. Queremos te mostrar como mudar a forma de fazer pagamentos online no Brasil.
 
 
-**1)** Se no seu site ainda não tem <a href="http://jquery.com/" target="_blank">jQuery</a>, inclua-o (versão 1.7.0 ou posterior) no head de todas as suas páginas (veja código exemplo abaixo):
+**1)** Se o seu site ainda não tem o <a href="http://jquery.com/" target="_blank">jQuery</a>, inclua-o (versão 1.7.0 ou posterior) no head de todas as suas páginas (veja código exemplo abaixo):
 
 
 ````html
