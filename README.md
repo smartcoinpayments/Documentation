@@ -42,7 +42,7 @@ Se é sua primeira vez, vamos ser rápidos para você experimentar a Smartcoin. 
 
 **Aviso 2:** A URL do atributo action do form é um exemplo e deve ser substituída pela sua. <a href="https://github.com/smartcoinpayments/smartcoin-heroku" target="_blank">Veja nosso exemplo</a> de como criar um serviço no Heroku para processar as suas transações.
 
-**Aviso 3:** Quer número de cartões de teste? [Veja a lista](https://github.com/smartcoinpayments/Documentation/wiki/Cart%C3%B5es-de-Teste) dos dados para cartões de teste com sucesso ou error.
+**Aviso 3:** Quer número de cartões de teste? <a href="https://github.com/smartcoinpayments/Documentation/wiki/Cart%C3%B5es-de-Teste" target="_blank">Veja a lista</a> dos dados para cartões de teste com sucesso ou error.
 
 **4)** Agora é só testar e experimentar sua nova experiência que o seu e-commerce irá proporcionar para os seus clientes! :)
 
