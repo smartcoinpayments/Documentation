@@ -53,7 +53,9 @@ Para obter suas prórias chaves de acesso à API da Smartcoin, visite o website 
 1. [Cartões de Crédito para teste](https://github.com/smartcoinpayments/Documentation/wiki/Cart%C3%B5es-de-Teste)
 2. [Smart Checkout](https://github.com/smartcoinpayments/Documentation/wiki/Smart-Checkout) (personalize o seu Smart Checkout)
 3. Bibliotecas (envie as cobranças via servidor para a Smartcoin):
+    * [- C# .NET](https://github.com/smartcoinpayments/smartcoin-net)
     * [- PHP](https://github.com/smartcoinpayments/smartcoin-php)
+    * [- Python](https://github.com/smartcoinpayments/smartcoin-python)
     * [- Ruby](https://github.com/smartcoinpayments/smartcoin-ruby)
 4. Plugins (faça integração com sua plataforma de e-commerce de forma rápida e fácil):
     * [- WooCommerce](https://github.com/smartcoinpayments/smartcoin-woo)
