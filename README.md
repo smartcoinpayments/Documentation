@@ -58,5 +58,6 @@ Para obter suas prórias chaves de acesso à API da Smartcoin, visite o website 
 4. Plugins (faça integração com sua plataforma de e-commerce de forma rápida e fácil):
     * [- WooCommerce](https://github.com/smartcoinpayments/smartcoin-woo)
     * [- PrestaShop](https://github.com/smartcoinpayments/smartcoin-prestashop)
+    * [- Magento](https://github.com/smartcoinpayments/smartcoin-magento)
 5. [Webhook](https://github.com/smartcoinpayments/Documentation/wiki/Webhook) 
 6. [Solução com Heroku](https://github.com/smartcoinpayments/smartcoin-heroku)
