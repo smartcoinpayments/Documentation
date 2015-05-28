@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		
+		var _smartcoin_api_key = 'pk_test_407d1f51a61756';
+
+  	var headTag = document.getElementsByTagName("head")[0];
+	  var smartTag = document.createElement('script');
+	  smartTag.type = 'text/javascript';
+	  smartTag.async = false;
+	  smartTag.src = 'https://js.smartcoin.com.br/v1/smartcoin.js';
+	  headTag.appendChild(smartTag);
+
+	</script>
+
+	<title>Formulário de Pagamento</title>
+</head>
+<body>
+	<div>
+		<form action="#" method="POST" id="payment-form">
+  		<span class="payment-errors"></span>
+
+  		<div class="form-row">
+				<label>
+					<span>Nome</span>
+					<input type="text" size="33" name="name" data-smartcoin="name"/>
+				</label>
+			</div>	
+
+			<div class="form-row">
+				<label>
+					<span>Número do cartão</span>
+					<input type="text" size="20" data-smartcoin="number"/>
+				</label>
+			</div>
+
+		  <div class="form-row">
+			  <label>
+			  	<span>CVC</span>
+			      <input type="text" size="4" data-smartcoin="cvc"/>
+			    </label>
+		  </div>
+
+		  <div class="form-row">
+		    <label>
+		      <span>Vencimento (MM/YYYY)</span>
+		      <input type="text" size="2" data-smartcoin="exp_month"/>
+		    </label>
+		    <span> / </span>
+		    <input type="text" size="4" data-smartcoin="exp_year"/>
+		  </div>
+
+  		<button type="submit">Enviar Pagamento</button>
+		</form>
+	</div>
+	<script type="text/javascript">
+
+		setTimeout(function() {
+	    $('input[data-smartcoin="number"]').payment('formatCardNumber');
+	    $('input[data-smartcoin=cvc]').payment('formatCardCVC');
+  	}, 1000);
+
+		var smartcoin_validate_payment_form = function(form) {
+		  var msg = '<ul>';
+		  if(!$.payment.validateCardNumber($('input[data-smartcoin="number"]').val()))
+		    msg += '<li>Número do cartão inválido</li>';
+
+		  if($('input[data-smartcoin="name"]').val() == 0)
+		    msg += '<li>Nome não pode estar vazio</li>';
+
+		  if(!$.payment.validateCardExpiry($('select[data-smartcoin="exp_month"]').val(),$('select[data-smartcoin="exp_year"]').val()))
+		    msg += '<li>Data de expiração inválida</li>';
+
+		  if(!$.payment.validateCardCVC($('input[data-smartcoin="cvc"]').val(),$.payment.cardType($('input[data-smartcoin="number"]').val())))
+		    msg += '<li>Código de segurança inválido</li>';
+		  msg += '</ul>';
+		  form.find('.payment-errors').html(msg);
+
+		  return msg.length === '<ul></ul>'.length;
+		};
+
+		jQuery(function($) {
+
+			function smartCoinResponseHandler (response) {
+				var $form = $('#payment-form');
+				if (response.error) {
+					// Exibe os erros no formulário
+					$form.find('.payment-errors').text(response.error.message);
+	    		$form.find('button').prop('disabled', false);
+				} else {
+					// response contém id e card, contendo dados adicionais do cartão
+			    var token = response.id;
+			    // Insere o token no formulário para que possa ser enviado ao servidor
+			    $form.append($('<input type="hidden" name="smartcoinToken" />').val(token));
+			    // e envia os dados
+			    $form.get(0).submit();
+				}
+			};
+
+			$('#payment-form').submit(function(event) {
+				var $form = $(this);
+
+				if(smartcoin_validate_payment_form($form)) {
+					// Desabilita o botão de envio para prevenir múltiplos clicks
+					$form.find('button').prop('disabled', true);
+
+					// Define a chave 
+					SmartCoin.set_api_key(_smartcoin_api_key);
+
+					// Cria o token a partir dos dados do formulário
+					SmartCoin.create_token($form, smartCoinResponseHandler);
+				}
+
+				// Evita que o formulário seja enviado com a ação default
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
